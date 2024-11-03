@@ -1,12 +1,12 @@
 # stickertranslate
 
 ## Description
-stickertranslate is a Python script that allows users to fetch and display information about stickers from a remote API. Users can input non-human-readable SKU to get the human-readable name, stock, and a preview of the sticker. Useful for when sticker SKUs is shown but not the name. For example, Older version of shipment viewer.
+stickertranslate is a Python script that allows you to fetch and display information about stickers from a remote API. You can input non-human-readable SKU to get the human-readable name, stock, and a preview of the sticker. Useful for when sticker SKUs is shown but not the name. For example, Older version of shipment viewer.
 
 ## Features
-- Fetch sticker data from a remote API
-- Input SKU to get sticker details
-- Display sticker name, stock, and preview image
+- Fetch sticker data from Hack Club's Sticker API
+- Input the sticker SKU to get sticker details
+- Display sticker name, stock, and preview image URL
 - Indicate stock status (in stock, low stock, out of stock)
 
 ## Requirements
