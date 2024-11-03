@@ -1,7 +1,7 @@
-# stickertransalate
+# stickertranslate
 
 ## Description
-stickertransalate is a Python script that allows users to fetch and display information about stickers from a remote API. Users can input a SKU to get the name, stock, and a preview of the sticker.
+stickertranslate is a Python script that allows users to fetch and display information about stickers from a remote API. Users can input non-human-readable SKU to get the human-readable name, stock, and a preview of the sticker. Useful for when sticker SKUs is shown but not the name. For example, Older version of shipment viewer.
 
 ## Features
 - Fetch sticker data from a remote API
@@ -13,23 +13,33 @@ stickertransalate is a Python script that allows users to fetch and display info
 - Python 3.x
 - `requests` library
 - `colorama` library
+- `venv` Installed
 
 ## Installation
+
+All commands below assume that your shell is bash or zsh.
+
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/stickertransalate.git
-    cd stickertransalate
+    git clone https://github.com/noigamegun/stickertranslate.git
+    cd stickertranslate
     ```
 
-2. Install the required libraries:
+2. Make a virtual enviroment:
     ```sh
-    pip install requests colorama
+    python3 -m venv ./venv/
+    ```
+
+3. Install the required libraries:
+    ```sh
+    source ./venv/bin/activate
+    pip3 install requests colorama
     ```
 
 ## Usage
 1. Run the script:
     ```sh
-    python stickertransalate.py
+    python3 main.py
     ```
 
 2. Follow the prompts to input a SKU and get sticker details.

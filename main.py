@@ -1,18 +1,21 @@
 try:
     import requests
-    from colorama import Fore, Back, Style
+    from colorama import Fore, Style
 except ImportError:
     print("[!] Failed to import required libraries. Please run 'pip install -r requirements.txt' to install the required libraries.")
     exit()
 
+print(Fore.WHITE + "=" * 40)
 print(Fore.GREEN + "Welcome to Sticker Translate!")
 print(Fore.GREEN + "This tool will help you find the name and stock of a sticker from its non-human-readable SKUs.")
 print(Fore.GREEN + "Please enter the SKU of the sticker you want to find.")
+print(Fore.WHITE + "=" * 40)
 # reset color
 print(Style.RESET_ALL)
 
 
 debug = False
+
 api_url = 'https://arcade-stickers.hackclub.dev/api/skus/all'
 try:
     print("Fetching data from the API...")
